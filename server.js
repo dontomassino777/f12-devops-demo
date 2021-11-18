@@ -49,7 +49,7 @@ app.post("/api/students", (req, res) => {
 
 app.use(rollbar.errorHandler())
 
-const port = process.env.port || 4545;
+const port = process.env.PORT || 4545;
 
 app.listen(port, () => {
     console.log(`Jammin on ${port}`);
